@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dott. Francesco Romeo — Biologo Nutrizionista a Reggio Calabria</title>
+<meta name="description" content="Percorsi alimentari personalizzati a Reggio Calabria, in studio e online. Prima visita 60 minuti, piano su misura, nessuna rinuncia.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#14543f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2314533f'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3EFR%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--
+==================================================================================
+  LANDING "FRANCESCO ROMEO" — Biologo Nutrizionista · Reggio Calabria
+  File unico, zero plugin, zero dipendenze (solo Google Fonts).
+  --------------------------------------------------------------------------------
+  PER RIBRANDIZZARE PER UN ALTRO PROFESSIONISTA cambia solo il blocco :root:
+    --nome, --citta, --tel, --wa, --email, --indirizzo, --orari, --albo, --piva
+    e le 5 immagini (--img1..--img5)
+==================================================================================
+-->
+<style>
+:root{
+  /* ---- dati cliente ---- */
+  --nome:"Dott. Francesco Romeo";
+  --nome-breve:"F. Romeo";
+  --ruolo:"Biologo Nutrizionista";
+  --citta:"Reggio Calabria";
+  --tel:"+39 347 000 0000";
+  --wa:"393470000000";
+  --email:"studio@francescoromeo.it";
+  --indirizzo:"Via [•], Reggio Calabria";
+  --orari:"Lun–Ven 9:00–19:00 · Sab su appuntamento";
+  --albo:"Iscritto all'Ordine dei Biologi della Calabria";
+  --piva:"P.IVA 00000000000";
+
+  --u:"https://peaceful-territory.localsite.io/wp-content/uploads/2026/10/";
+
+  /* ---- palette ---- */
+  --verde:#14543f; --verde-2:#0d3b2c; --verde-3:#1f7a5a;
+  --mint:#e9f2ec; --mint-2:#d6e8dd;
+  --crema:#faf8f3; --carta:#ffffff;
+  --inchiostro:#12241d; --grigio:#5f7168; --bordo:#e3e9e4;
+  --accento:#c9773f;
+  --r:20px; --max:1140px;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+.fp *{box-sizing:border-box;margin:0;padding:0}
+.fp{font-family:var(--sans);color:var(--inchiostro);background:var(--crema);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.fp img{max-width:100%;display:block}
+.fp a{color:inherit;text-decoration:none}
+.fp h1,.fp h2,.fp h3{font-family:var(--serif);font-weight:600;line-height:1.1;letter-spacing:-.015em}
+.fp h1{font-size:clamp(2.3rem,5.4vw,4rem)}
+.fp h2{font-size:clamp(1.8rem,3.6vw,2.7rem)}
+.fp h3{font-size:1.16rem;font-family:var(--sans);font-weight:700;letter-spacing:-.01em}
+.fp .wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.fp .eyebrow{display:inline-flex;align-items:center;gap:.5em;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.15em;color:var(--verde-3)}
+.fp .eyebrow:before{content:"";width:26px;height:2px;background:var(--verde-3);display:block}
+.fp .lead{color:var(--grigio);font-size:clamp(1.02rem,1.5vw,1.1rem)}
+.fp .sec{padding:clamp(56px,7vw,104px) 0}
+.fp .sec.tight{padding:clamp(40px,5vw,64px) 0}
+
+/* ---------- barra progresso ---------- */
+.fp-prog{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--verde-3),var(--accento));z-index:60;transition:width .1s linear}
+
+/* ---------- header ---------- */
+.fp-head{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);background:rgba(250,248,243,.82);border-bottom:1px solid transparent;transition:border-color .25s,box-shadow .25s}
+.fp-head.on{border-color:var(--bordo);box-shadow:0 6px 24px rgba(18,36,29,.05)}
+.fp-head .wrap{display:flex;align-items:center;gap:16px;min-height:72px}
+.fp-logo{display:flex;align-items:center;gap:11px}
+.fp-mono{width:40px;height:40px;border-radius:13px;background:linear-gradient(145deg,var(--verde-3),var(--verde-2));color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:1.02rem;font-weight:600;letter-spacing:.02em}
+.fp-brand b{display:block;font-family:var(--serif);font-size:1.03rem;font-weight:600;line-height:1.15}
+.fp-brand span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.13em;color:var(--grigio)}
+.fp-nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-size:.93rem;font-weight:500}
+.fp-nav a{color:var(--grigio);position:relative}
+.fp-nav a:hover{color:var(--verde)}
+@media (max-width:960px){.fp-nav a:not(.fp-btn){display:none}}
+
+.fp-btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;background:var(--verde);color:#fff;padding:.92em 1.5em;border-radius:100px;font-weight:600;font-size:.94rem;font-family:var(--sans);border:0;cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s;box-shadow:0 8px 22px rgba(20,84,63,.18)}
+.fp-btn:hover{background:var(--verde-2);transform:translateY(-2px);box-shadow:0 12px 28px rgba(20,84,63,.25)}
+.fp-btn.wa{background:#25d366;box-shadow:0 8px 22px rgba(37,211,102,.25)}
+.fp-btn.wa:hover{background:#1eb455}
+.fp-btn.ghost{background:transparent;color:var(--verde);border:1.6px solid var(--mint-2);box-shadow:none}
+.fp-btn.ghost:hover{background:var(--mint);border-color:var(--verde-3)}
+.fp-btn.sm{padding:.66em 1.15em;font-size:.87rem}
+.fp-btn.light{background:#fff;color:var(--verde-2)}
+.fp-btn.light:hover{background:var(--mint)}
+.fp-btn svg{width:17px;height:17px;flex:none}
+
+/* ---------- hero ---------- */
+.fp-hero{position:relative;padding:clamp(34px,5vw,64px) 0 clamp(46px,6vw,86px);background:radial-gradient(1100px 520px at 88% -12%,var(--mint),transparent 68%),linear-gradient(180deg,#fff,var(--crema))}
+.fp-hero .grid{display:grid;grid-template-columns:1.06fr .94fr;gap:clamp(28px,4vw,58px);align-items:center}
+@media (max-width:920px){.fp-hero .grid{grid-template-columns:1fr}}
+.fp-hero h1{margin:16px 0 18px}
+.fp-hero h1 em{font-style:normal;color:var(--verde-3);position:relative;white-space:nowrap}
+.fp-hero h1 em:after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.32em;background:var(--mint-2);z-index:-1;border-radius:4px}
+.fp-cta{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 22px}
+.fp-chips{display:flex;flex-wrap:wrap;gap:9px;font-size:.83rem;color:var(--grigio)}
+.fp-chips span{background:#fff;border:1px solid var(--bordo);border-radius:100px;padding:.46em .92em;display:inline-flex;align-items:center;gap:.45em;font-weight:500}
+.fp-chips svg{width:14px;height:14px;color:var(--verde-3);flex:none}
+.fp-herofig{position:relative}
+.fp-herofig .ph{border-radius:26px;overflow:hidden;box-shadow:0 30px 70px rgba(18,36,29,.16);aspect-ratio:4/3.1;background:var(--mint)}
+.fp-herofig .ph div{width:100%;height:100%;background:var(--img1) center/cover no-repeat;transform:scale(1.02)}
+.fp-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 18px 40px rgba(18,36,29,.14);display:flex;align-items:center;gap:12px}
+.fp-badge .n{font-family:var(--serif);font-size:1.5rem;font-weight:600;line-height:1}
+.fp-badge .s{font-size:.74rem;color:var(--grigio);line-height:1.35}
+.fp-stars{color:#f0a92e;letter-spacing:.06em;font-size:.85rem}
+@media (max-width:520px){.fp-badge{left:8px;bottom:12px;padding:11px 14px}.fp-badge .n{font-size:1.2rem}}
+.fp-float{position:absolute;right:-12px;top:26px;background:var(--verde-2);color:#fff;border-radius:16px;padding:12px 16px;font-size:.79rem;line-height:1.4;max-width:180px;box-shadow:0 18px 40px rgba(13,59,44,.28)}
+.fp-float b{font-family:var(--serif);font-size:1.05rem;display:block}
+@media (max-width:520px){.fp-float{display:none}}
+
+/* ---------- strip ---------- */
+.fp-strip{border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo);background:#fff}
+.fp-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;padding:26px 24px}
+@media (max-width:820px){.fp-strip .wrap{grid-template-columns:repeat(2,1fr)}}
+.fp-strip .it{display:flex;gap:12px;align-items:flex-start}
+.fp-strip svg{width:22px;height:22px;color:var(--verde-3);flex:none;margin-top:2px}
+.fp-strip b{display:block;font-size:.92rem;font-weight:700}
+.fp-strip span{font-size:.82rem;color:var(--grigio)}
+
+/* ---------- sezioni ---------- */
+.fp-hd{max-width:46em;margin-bottom:clamp(26px,3.4vw,44px)}
+.fp-hd h2{margin:14px 0 12px}
+.fp-hd p{color:var(--grigio)}
+
+.fp-problems{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media (max-width:980px){.fp-problems{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.fp-problems{grid-template-columns:1fr}}
+.fp-prob{background:#fff;border:1px solid var(--bordo);border-radius:var(--r);padding:24px 22px;position:relative}
+.fp-prob:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;border-radius:var(--r) 0 0 var(--r);background:var(--mint-2)}
+.fp-prob h3{margin-bottom:8px}
+.fp-prob p{font-size:.93rem;color:var(--grigio)}
+
+.fp-about{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(26px,4vw,52px);align-items:center}
+@media (max-width:900px){.fp-about{grid-template-columns:1fr}}
+.fp-portrait{border-radius:26px;overflow:hidden;aspect-ratio:4/4.4;background:var(--mint);box-shadow:0 26px 60px rgba(18,36,29,.13)}
+.fp-portrait div{width:100%;height:100%;background:var(--img2) center/cover no-repeat}
+.fp-tick{list-style:none;display:grid;gap:13px;margin-top:20px}
+.fp-tick li{display:flex;gap:12px;align-items:flex-start;font-size:.96rem}
+.fp-tick svg{width:20px;height:20px;color:var(--verde-3);flex:none;margin-top:3px}
+.fp-tick b{font-weight:700}
+
+.fp-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:980px){.fp-cards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.fp-cards{grid-template-columns:1fr}}
+.fp-card{background:#fff;border:1px solid var(--bordo);border-radius:var(--r);padding:26px 24px;transition:transform .22s,box-shadow .22s,border-color .22s}
+.fp-card:hover{transform:translateY(-4px);box-shadow:0 22px 46px rgba(18,36,29,.09);border-color:var(--mint-2)}
+.fp-card .ic{width:46px;height:46px;border-radius:14px;background:var(--mint);color:var(--verde);display:grid;place-items:center;margin-bottom:16px}
+.fp-card .ic svg{width:23px;height:23px}
+.fp-card p{font-size:.93rem;color:var(--grigio);margin-top:8px}
+
+.fp-steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:980px){.fp-steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.fp-steps{grid-template-columns:1fr}}
+.fp-step{background:#fff;border:1px solid var(--bordo);border-radius:var(--r);padding:26px 22px;position:relative}
+.fp-step:before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:1.5rem;color:var(--verde-3);display:block;margin-bottom:10px}
+.fp-step p{font-size:.92rem;color:var(--grigio);margin-top:7px}
+
+.fp-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+@media (max-width:820px){.fp-gallery{grid-template-columns:1fr}}
+.fp-shot{border-radius:var(--r);overflow:hidden;position:relative;min-height:260px;background:var(--mint)}
+.fp-shot div{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s ease}
+.fp-shot:hover div{transform:scale(1.05)}
+.fp-shot figcaption{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.94);border-radius:14px;padding:12px 16px;font-size:.86rem;backdrop-filter:blur(6px)}
+.fp-shot figcaption b{display:block;font-size:.95rem}
+.fp-shot.big{min-height:340px}
+
+.fp-stats{background:var(--verde-2);color:#fff;border-radius:28px;padding:clamp(30px,4vw,54px)}
+.fp-stats .g{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:center}
+@media (max-width:700px){.fp-stats .g{grid-template-columns:1fr;gap:30px}}
+.fp-stats .n{font-family:var(--serif);font-size:clamp(2rem,4.6vw,3rem);font-weight:600;line-height:1}
+.fp-stats .l{font-size:.88rem;color:rgba(255,255,255,.72);margin-top:8px}
+.fp-stats h2{color:#fff}
+
+.fp-quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:900px){.fp-quotes{grid-template-columns:1fr}}
+.fp-quote{background:#fff;border:1px solid var(--bordo);border-radius:var(--r);padding:26px 24px;display:flex;flex-direction:column;gap:14px}
+.fp-quote p{font-size:.95rem;color:var(--grigio);font-style:italic}
+.fp-quote .who{font-size:.82rem;font-weight:700;margin-top:auto}
+
+.fp-price{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+@media (max-width:900px){.fp-price{grid-template-columns:1fr}}
+.fp-pack{background:#fff;border:1px solid var(--bordo);border-radius:24px;padding:30px 26px;display:flex;flex-direction:column;gap:14px}
+.fp-pack.best{border:2px solid var(--verde-3);box-shadow:0 26px 60px rgba(20,84,63,.14);position:relative}
+.fp-pack.best:after{content:"Il più scelto";position:absolute;top:-13px;left:26px;background:var(--verde);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.42em .9em;border-radius:100px}
+.fp-pack .pr{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1}
+.fp-pack .pr small{font-family:var(--sans);font-size:.78rem;color:var(--grigio);font-weight:500;display:block;margin-top:6px}
+.fp-pack ul{list-style:none;display:grid;gap:10px;font-size:.92rem;color:var(--grigio)}
+.fp-pack li{display:flex;gap:10px}
+.fp-pack svg{width:18px;height:18px;color:var(--verde-3);flex:none;margin-top:3px}
+
+.fp-faq{display:grid;gap:10px;max-width:56em}
+.fp-faq details{background:#fff;border:1px solid var(--bordo);border-radius:14px;padding:0 20px;transition:border-color .2s}
+.fp-faq details[open]{border-color:var(--mint-2)}
+.fp-faq summary{cursor:pointer;list-style:none;font-weight:600;padding:18px 0;display:flex;justify-content:space-between;gap:14px}
+.fp-faq summary::-webkit-details-marker{display:none}
+.fp-faq summary:after{content:"+";color:var(--verde-3);font-size:1.3rem;line-height:1;font-weight:400}
+.fp-faq details[open] summary:after{content:"–"}
+.fp-faq p{font-size:.93rem;color:var(--grigio);padding-bottom:18px}
+
+.fp-cta-block{background:linear-gradient(150deg,var(--verde-2),var(--verde-3));border-radius:28px;padding:clamp(32px,4.4vw,58px);color:#fff;display:grid;grid-template-columns:1.1fr 1fr;gap:34px;align-items:center}
+@media (max-width:860px){.fp-cta-block{grid-template-columns:1fr}}
+.fp-cta-block h2{color:#fff;margin-bottom:12px}
+.fp-cta-block p{color:rgba(255,255,255,.82)}
+.fp-info{list-style:none;display:grid;gap:14px;font-size:.94rem}
+.fp-info li{display:flex;gap:12px;align-items:flex-start}
+.fp-info svg{width:19px;height:19px;flex:none;margin-top:3px;opacity:.9}
+.fp-info a{border-bottom:1px solid rgba(255,255,255,.35)}
+.fp-info a:hover{border-color:#fff}
+
+.fp-foot{padding:34px 0 96px;font-size:.82rem;color:var(--grigio)}
+@media (max-width:640px){.fp-fab{width:50px;height:50px;right:14px;bottom:14px}.fp-fab svg{width:24px;height:24px}}
+.fp-foot .wrap{display:grid;gap:9px}
+.fp-foot b{color:var(--inchiostro)}
+.fp-foot .links a{margin-right:14px}
+
+.fp-fab{position:fixed;right:20px;bottom:20px;z-index:55;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;box-shadow:0 14px 30px rgba(37,211,102,.4);transition:transform .18s}
+.fp-fab:hover{transform:scale(1.07)}
+.fp-fab svg{width:27px;height:27px}
+
+.fp .ph img,.fp-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.fp-shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.fp-shot:hover img{transform:scale(1.05)}
+.fp-gallery.one{grid-template-columns:1fr}
+
+/* ---------- per chi ---------- */
+.fp-tags{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:980px){.fp-tags{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.fp-tags{grid-template-columns:1fr}}
+.fp-tag{background:#fff;border:1px solid var(--bordo);border-radius:16px;padding:18px;display:flex;gap:12px;align-items:flex-start;transition:transform .2s,border-color .2s}
+.fp-tag:hover{transform:translateY(-3px);border-color:var(--mint-2)}
+.fp-tag .ic{width:34px;height:34px;border-radius:10px;background:var(--mint);color:var(--verde);display:grid;place-items:center;flex:none}
+.fp-tag .ic svg{width:18px;height:18px}
+.fp-tag b{display:block;font-size:.94rem;margin-bottom:3px}
+.fp-tag span{font-size:.82rem;color:var(--grigio);line-height:1.45}
+/* ---------- prenotazione rapida ---------- */
+.fp-book{display:grid;grid-template-columns:1fr 1.1fr;gap:34px;align-items:center;background:#fff;border:1px solid var(--bordo);border-radius:26px;padding:clamp(26px,3.4vw,44px)}
+@media (max-width:880px){.fp-book{grid-template-columns:1fr}}
+.fp-slotgroup{margin-bottom:16px}
+.fp-slotgroup .lbl{display:block;font-size:.74rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:var(--grigio);margin-bottom:9px}
+.fp-slots-row{display:flex;flex-wrap:wrap;gap:8px}
+.fp-slot{border:1.4px solid var(--bordo);background:#fff;border-radius:100px;padding:.55em 1.05em;font-size:.88rem;font-weight:600;font-family:var(--sans);color:var(--inchiostro);cursor:pointer;transition:.18s}
+.fp-slot:hover{border-color:var(--verde-3)}
+.fp-slot.sel{background:var(--verde);border-color:var(--verde);color:#fff}
+
+/* ---------- animazioni ---------- */
+.rv{opacity:1;transform:none}
+.fp.anim .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.fp.anim .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fp.anim .rv{opacity:1;transform:none;transition:none}}
+</style>
+
+<div class="fp">
+<div class="fp-prog" id="fpProg"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="fp-head" id="fpHead">
+  <div class="wrap">
+    <a class="fp-logo" href="#top">
+      <span class="fp-mono">FR</span>
+      <span class="fp-brand"><b>Dott. Francesco Romeo</b><span>Biologo Nutrizionista</span></span>
+    </a>
+    <nav class="fp-nav">
+      <a href="#metodo">Metodo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#prezzi">Percorsi</a>
+      <a href="#domande">Domande</a>
+      <a class="fp-btn sm" href="#contatti">Prenota</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="fp-hero" id="top">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow">Biologo Nutrizionista · Reggio Calabria</span>
+      <h1>Mangiare bene, <em>senza rinunciare</em> a niente.</h1>
+      <p class="lead">Percorsi alimentari costruiti su di te: la tua giornata, i tuoi orari, i tuoi gusti. Niente diete fotocopia, niente alimenti proibiti — solo un metodo che tiene nel tempo.</p>
+      <div class="fp-cta">
+        <a class="fp-btn wa" href="https://wa.me/393470000000?text=Salve%2C%20vorrei%20informazioni%20per%20una%20prima%20visita" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2s-1 .1-3.2-.9-3.7-3.3-3.8-3.5-.9-1.3-.9-2.4.6-1.7.8-1.9.4-.3.6-.3h.5c.2 0 .4 0 .6.5s.7 1.7.8 1.8.1.3 0 .5-.3.4-.4.5-.3.3-.1.6.7 1.1 1.4 1.7 1.3.9 1.6 1 .4.1.6-.1.7-.8.9-1.1.4-.2.6-.1 1.5.7 1.7.8.4.2.4.3-.1.5-.3 1z"/></svg>
+          Scrivimi su WhatsApp
+        </a>
+        <a class="fp-btn ghost" href="#prezzi">Guarda i percorsi</a>
+      </div>
+      <div class="fp-chips">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Laurea in Nutrizione</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Albo dei Biologi</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Studio e online</span>
+      </div>
+    </div>
+    <figure class="fp-herofig">
+      <div class="ph"><img src="img/hero.webp" alt="Ingredienti freschi e colorati" width="1024" height="683"></div>
+      <div class="fp-float"><b>Prima visita</b>60 minuti, in studio o in videochiamata</div>
+      <div class="fp-badge">
+        <div>
+          <div class="fp-stars">★★★★★</div>
+          <div class="s">su Google · 189 recensioni</div>
+        </div>
+        <div class="n">4,9</div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ STRIP ============ -->
+<section class="fp-strip">
+  <div class="wrap">
+    <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M4 10v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><div><b>Metodo scientifico</b><span>Piani basati sulle evidenze, non sulle mode</span></div></div>
+    <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg><div><b>Nessuna rinuncia</b><span>Si impara a gestire, non a eliminare</span></div></div>
+    <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><div><b>Anche online</b><span>Videochiamata e piano in formato digitale</span></div></div>
+    <div class="it"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><div><b>Risposte in 24h</b><span>Ti scrivo io con la prima data libera</span></div></div>
+  </div>
+</section>
+
+<!-- ============ PROBLEMI ============ -->
+<section class="fp sec">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Ti riconosci?</span>
+      <h2>Se hai già provato a “metterti a dieta”, sai com’è andata.</h2>
+      <p>Il problema quasi mai è la forza di volontà. È che nessuno costruisce un piano attorno alla tua vita reale.</p>
+    </div>
+    <div class="fp-problems">
+      <div class="fp-prob rv"><h3>Diete che durano due settimane</h3><p>Funzionano finché resisti, poi torni al punto di partenza — spesso peggio di prima.</p></div>
+      <div class="fp-prob rv"><h3>Fogli fotocopiati</h3><p>Stesso schema per tutti, senza guardare i tuoi orari, il lavoro, la famiglia, lo sport.</p></div>
+      <div class="fp-prob rv"><h3>Il piatto “vietato”</h3><p>La cena fuori con gli amici diventa un problema. Così il percorso salta.</p></div>
+      <div class="fp-prob rv"><h3>Nessuno che ti segue</h3><p>Ricevi il piano e sparisci. Quando arriva il momento di stallo, sei da solo.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PER CHI ============ -->
+<section class="fp sec" id="per-chi" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Per chi</span>
+      <h2>Riconosci la tua situazione?</h2>
+      <p>Il percorso cambia in base a chi ho davanti. Questi sono i casi che seguo piu spesso.</p>
+    </div>
+    <div class="fp-tags">
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><div><b>Dimagrimento</b><span>Perdere grasso senza perdere muscolo</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M6 4v16M18 4v16"/><path d="M6 8h12M6 16h12"/></svg></div><div><b>Sport e performance</b><span>Energia, recupero, massa</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div><b>Diabete e metabolismo</b><span>Glicemia, insulino-resistenza</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div><div><b>Colesterolo e pressione</b><span>Prevenzione cardiovascolare</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M8 13c1.5 2 6.5 2 8 0"/><path d="M9 9h.01M15 9h.01"/></svg></div><div><b>Intestino e digestione</b><span>Colon irritabile, gonfiore, reflusso</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="10" r="3"/><path d="M12 13c-3 0-5 2-5 5h10c0-3-2-5-5-5z"/></svg></div><div><b>Gravidanza e allattamento</b><span>Sicurezza per mamma e bambino</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></div><div><b>Famiglie e bambini</b><span>Educazione alimentare concreta</span></div></div>
+      <div class="fp-tag rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/><path d="M12 8v5l3.5 2"/></svg></div><div><b>Rapporto con il cibo</b><span>Abbuffate, restrizioni, sensi di colpa</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHI SONO ============ -->
+<section class="fp sec" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="wrap">
+    <div class="fp-about">
+      <figure class="fp-portrait rv"><img src="img/chi-sono.webp" alt="Tavola con un pasto bilanciato" width="683" height="1024"></figure>
+      <div class="rv">
+        <span class="eyebrow">Chi sono</span>
+        <h2 style="margin:14px 0 16px">Francesco Romeo, nutrizionista a Reggio Calabria.</h2>
+        <p class="lead">Da oltre dieci anni affianco adulti, famiglie e sportivi che vogliono stare meglio senza trasformare la tavola in un campo di battaglia.</p>
+        <p style="color:var(--grigio);margin-top:14px">Lavoro con un principio semplice: <b>la dieta migliore è quella che riesci a seguire</b>. Per questo parto sempre da come mangi oggi, non da un modello teorico — e spiego ogni scelta, così il risultato resta anche quando il percorso finisce.</p>
+        <ul class="fp-tick">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Laurea in Scienze dell'Alimentazione</b> e abilitazione all'esercizio della professione.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Iscritto all'Ordine dei Biologi</b> — figura sanitaria, ricevuta detraibile.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Formazione continua</b>: nutrizione clinica, sportiva e disturbi del comportamento alimentare.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIZI ============ -->
+<section class="fp sec" id="servizi">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Servizi</span>
+      <h2>Di cosa mi occupo</h2>
+      <p>Dal percorso di dimagrimento alla nutrizione clinica e sportiva, fino al supporto in gravidanza.</p>
+    </div>
+    <div class="fp-cards">
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3>Dimagrimento</h3><p>Perdita di massa grassa sostenibile, con un piano che rispetta i tuoi ritmi e i tuoi gusti.</p></article>
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><h3>Nutrizione clinica</h3><p>Diabete, colesterolo, tiroide, intestino irritabile, insulino-resistenza: percorso integrato con il medico.</p></article>
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M6 4v16M18 4v16"/><path d="M6 8h12M6 16h12"/></svg></div><h3>Sportivi</h3><p>Composizione corporea, performance e recupero — dall'amatore all'agonista.</p></article>
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div><h3>Gravidanza e allattamento</h3><p>Alimentazione sicura e bilanciata per mamma e bambino, prima e dopo il parto.</p></article>
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="8" r="3.2"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg></div><h3>Famiglie e bambini</h3><p>Educazione alimentare concreta, dallo svezzamento all'età scolare.</p></article>
+      <article class="fp-card rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div><h3>Consulenza online</h3><p>Stesso percorso, da casa: videochiamata, piano digitale e supporto tra le visite.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ METODO ============ -->
+<section class="fp sec" id="metodo" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Il metodo</span>
+      <h2>Come funziona, passo per passo</h2>
+      <p>Quattro momenti chiari. Sai sempre cosa stai facendo e perché.</p>
+    </div>
+    <div class="fp-steps">
+      <div class="fp-step rv"><h3>Prima visita</h3><p>Un'ora di ascolto: abitudini, storia del peso, esami, obiettivi. Valutazione antropometrica.</p></div>
+      <div class="fp-step rv"><h3>Il tuo piano</h3><p>Entro una settimana ricevi il piano alimentare — grammature, alternative e ricette semplici.</p></div>
+      <div class="fp-step rv"><h3>Controlli</h3><p>Ogni 3-4 settimane misuriamo i risultati e correggiamo la rotta, senza partire da zero.</p></div>
+      <div class="fp-step rv"><h3>Mantenimento</h3><p>L'obiettivo finale è che tu non abbia più bisogno di me: autonomia e consapevolezza.</p></div>
+    </div>
+    <div class="fp-gallery one" style="margin-top:24px">
+      <figure class="fp-shot big rv"><img src="img/metodo.webp" alt="Verdure e cereali in padella"><figcaption><b>Cucina vera, non teoria</b>Le ricette e gli alimenti che trovi al supermercato sotto casa.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESEMPI ============ -->
+<section class="fp sec">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Esempi dal piano</span>
+      <h2>Cosa trovi nel piano alimentare</h2>
+      <p>Piatti veri, porzioni chiare, alternative per ogni giornata.</p>
+    </div>
+    <div class="fp-gallery">
+      <figure class="fp-shot big rv"><img src="img/esempi-1.webp" alt="Piatto completo con proteine, verdure e carboidrati"><figcaption><b>Piatto completo</b>Proteine, verdure e carboidrati: nessun gruppo escluso.</figcaption></figure>
+      <figure class="fp-shot rv"><img src="img/esempi-2.webp" alt="Colazione bilanciata"><figcaption><b>Anche la colazione conta</b>Un piano si costruisce dai pasti che salti piu spesso.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NUMERI ============ -->
+<section class="fp sec tight">
+  <div class="wrap">
+    <div class="fp-stats rv">
+      <h2 style="margin-bottom:26px">Numeri, non promesse</h2>
+      <div class="g">
+        <div><div class="n" data-count="1200" data-suffix="+">1.200+</div><div class="l">pazienti seguiti in studio e online</div></div>
+        <div><div class="n" data-count="10" data-suffix=" anni">10 anni</div><div class="l">di esperienza clinica</div></div>
+        <div><div class="n" data-count="92" data-suffix="%">92%</div><div class="l">prosegue dopo la prima visita</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIANZE ============ -->
+<section class="fp sec" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Dicono di me</span>
+      <h2>Le parole dei pazienti</h2>
+    </div>
+    <div class="fp-quotes">
+      <blockquote class="fp-quote rv"><div class="fp-stars">★★★★★</div><p>“Non credevo si potesse perdere peso mangiando così tanto. Il piano era chiaro e non ho mai avuto la sensazione di essere a dieta.”</p><div class="who">Maria G.</div></blockquote>
+      <blockquote class="fp-quote rv"><div class="fp-stars">★★★★★</div><p>“Mi ha spiegato il perché di ogni scelta. Dopo anni di diete fai-da-te ho finalmente capito come gestirmi da sola.”</p><div class="who">Antonio P.</div></blockquote>
+      <blockquote class="fp-quote rv"><div class="fp-stars">★★★★★</div><p>“Puntualissimo, disponibile anche per un dubbio tra una visita e l'altra. Consigliato a chi ha poco tempo per se stesso.”</p><div class="who">Carmela D.</div></blockquote>
+    </div>
+    <p style="font-size:.8rem;color:var(--grigio);margin-top:16px">Testimonianze segnaposto da sostituire con recensioni reali (nome e iniziale del cognome, come da privacy).</p>
+  </div>
+</section>
+
+<!-- ============ PREZZI ============ -->
+<section class="fp sec" id="prezzi">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Percorsi</span>
+      <h2>Quanto costa</h2>
+      <p>Prezzi trasparenti, senza sorprese. La ricevuta sanitaria è detraibile.</p>
+    </div>
+    <div class="fp-price">
+      <div class="fp-pack rv">
+        <h3>Prima visita</h3>
+        <div class="pr">90 €<small>singola, in studio o online</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>60 minuti di colloquio</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Valutazione antropometrica</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Piano alimentare entro 7 giorni</li>
+        </ul>
+        <a class="fp-btn ghost" href="https://wa.me/393470000000?text=Ciao%2C%20vorrei%20prenotare%20la%20prima%20visita" target="_blank" rel="noopener">Prenota la prima visita</a>
+      </div>
+      <div class="fp-pack best rv">
+        <h3>Percorso completo</h3>
+        <div class="pr">250 €<small>3 mesi · prima visita + 3 controlli</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Tutto quello della prima visita</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>3 visite di controllo incluse</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Piano aggiornato a ogni controllo</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Messaggi di supporto tra le visite</li>
+        </ul>
+        <a class="fp-btn" href="https://wa.me/393470000000?text=Ciao%2C%20mi%20interessa%20il%20percorso%20completo" target="_blank" rel="noopener">Parti da qui</a>
+      </div>
+      <div class="fp-pack rv">
+        <h3>Controllo singolo</h3>
+        <div class="pr">50 €<small>30 minuti · solo per chi ha già un piano attivo</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Misurazione dei progressi</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Modifiche al piano in corso</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6 9 17l-5-5"/></svg>Disponibile anche online</li>
+        </ul>
+        <a class="fp-btn ghost" href="https://wa.me/393470000000?text=Ciao%2C%20vorrei%20prenotare%20un%20controllo" target="_blank" rel="noopener">Prenota un controllo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="fp sec" id="domande" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
+  <div class="wrap">
+    <div class="fp-hd rv">
+      <span class="eyebrow">Domande frequenti</span>
+      <h2>Le cose che chiedono tutti</h2>
+    </div>
+    <div class="fp-faq">
+      <details class="rv"><summary>Serve la prescrizione del medico?</summary><p>No. Il biologo nutrizionista è una professione sanitaria: puoi prenotare direttamente. Se hai una diagnosi o una terapia in corso, porta la documentazione: lavoriamo in accordo con il tuo medico.</p></details>
+      <details class="rv"><summary>Devo portare le analisi del sangue?</summary><p>Se le hai fatte negli ultimi 6 mesi, sì: aiutano a inquadrare il percorso. Se non le hai, non è un ostacolo per iniziare.</p></details>
+      <details class="rv"><summary>Devo rinunciare a pasta, pane e dolci?</summary><p>No. Nessun alimento è proibito: si impara a gestirlo nelle quantità e nei momenti giusti. È il motivo per cui il percorso tiene nel tempo.</p></details>
+      <details class="rv"><summary>Si può fare tutto online?</summary><p>Sì. Videochiamata per la visita, piano in formato digitale, messaggi di supporto tra un incontro e l'altro. Stesso percorso, stesso prezzo.</p></details>
+      <details class="rv"><summary>Quanto tempo ci vuole per vedere i primi risultati?</summary><p>I primi cambiamenti misurabili arrivano di norma tra le 3 e le 6 settimane. Il lavoro vero è consolidare l'abitudine, ed è quello che facciamo nei mesi successivi.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRENOTAZIONE RAPIDA ============ -->
+<section class="fp sec tight" id="prenota">
+  <div class="wrap">
+    <div class="fp-book rv">
+      <div>
+        <span class="eyebrow">Prenotazione rapida</span>
+        <h2 style="margin:14px 0 12px">Dimmi quando, al resto penso io</h2>
+        <p style="color:var(--grigio)">Scegli giorno e fascia oraria: si apre WhatsApp con il messaggio gia scritto. Ti confermo io la disponibilita entro 24 ore.</p>
+      </div>
+      <div>
+        <div class="fp-slotgroup" data-key="giorno">
+          <span class="lbl">Giorno preferito</span>
+          <div class="fp-slots-row">
+            <button class="fp-slot" type="button">Lunedi</button><button class="fp-slot" type="button">Martedi</button>
+            <button class="fp-slot" type="button">Mercoledi</button><button class="fp-slot" type="button">Giovedi</button>
+            <button class="fp-slot" type="button">Venerdi</button><button class="fp-slot" type="button">Sabato</button>
+          </div>
+        </div>
+        <div class="fp-slotgroup" data-key="ora">
+          <span class="lbl">Fascia oraria</span>
+          <div class="fp-slots-row">
+            <button class="fp-slot" type="button">9-12</button><button class="fp-slot" type="button">12-15</button>
+            <button class="fp-slot" type="button">15-19</button><button class="fp-slot" type="button">Indifferente</button>
+          </div>
+        </div>
+        <a class="fp-btn wa" id="fpBook" href="https://wa.me/393470000000?text=Salve%2C%20vorrei%20prenotare%20una%20visita" target="_blank" rel="noopener">Invia la richiesta su WhatsApp</a>
+        <p style="font-size:.78rem;color:var(--grigio);margin-top:10px">Preferisci il telefono? <a href="tel:+393470000000" style="text-decoration:underline">+39 347 000 0000</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATTI ============ -->
+<section class="fp sec" id="contatti">
+  <div class="wrap">
+    <div class="fp-cta-block rv">
+      <div>
+        <h2>Prenota la tua prima visita</h2>
+        <p>Scrivimi su WhatsApp o chiama: ti rispondo personalmente entro 24 ore con la prima data disponibile. Nessun impegno.</p>
+        <div class="fp-cta" style="margin-bottom:0">
+          <a class="fp-btn wa" href="https://wa.me/393470000000?text=Salve%2C%20vorrei%20prenotare%20una%20visita" target="_blank" rel="noopener">Scrivimi su WhatsApp</a>
+          <a class="fp-btn light" href="tel:+393470000000">Chiama ora</a>
+        </div>
+      </div>
+      <ul class="fp-info">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 2z"/></svg><span><a href="tel:+393470000000">+39 347 000 0000</a></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg><span><a href="mailto:studio@francescoromeo.it">studio@francescoromeo.it</a></span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Studio: Via [•], Reggio Calabria</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span>Lun–Ven 9:00–19:00 · Sab su appuntamento</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="fp-foot">
+  <div class="wrap">
+    <div><b>Dott. Francesco Romeo</b> — Biologo Nutrizionista a Reggio Calabria · Iscritto all'Ordine dei Biologi della Calabria · P.IVA 00000000000</div>
+    <div>Le informazioni di questa pagina hanno scopo informativo e non sostituiscono il parere del medico curante né costituiscono diagnosi o terapia.</div>
+    <div class="links"><a href="#contatti">Contatti</a><a href="#">Privacy e cookie</a><a href="#">Note legali</a></div>
+  </div>
+</footer>
+
+<a class="fp-fab" href="https://wa.me/393470000000?text=Salve%2C%20vorrei%20informazioni" target="_blank" rel="noopener" aria-label="Scrivimi su WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.4A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2s-1 .1-3.2-.9-3.7-3.3-3.8-3.5-.9-1.3-.9-2.4.6-1.7.8-1.9.4-.3.6-.3h.5c.2 0 .4 0 .6.5s.7 1.7.8 1.8.1.3 0 .5-.3.4-.4.5-.3.3-.1.6.7 1.1 1.4 1.7 1.3.9 1.6 1 .4.1.6-.1.7-.8.9-1.1.4-.2.6-.1 1.5.7 1.7.8.4.2.4.3-.1.5-.3 1z"/></svg>
+</a>
+
+<script>
+(function(){
+  var root=document.querySelector('.fp'); if(root) root.classList.add('anim');
+  var els=document.querySelectorAll('.rv');
+  setTimeout(function(){ els.forEach(function(e){ e.classList.add('in'); }); }, 2500);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    els.forEach(function(e,i){ e.style.transitionDelay=(Math.min(i,6)*45)+'ms'; io.observe(e); });
+  } else { els.forEach(function(e){e.classList.add('in')}); }
+
+  var head=document.getElementById('fpHead'), prog=document.getElementById('fpProg');
+  function onScroll(){
+    var y=window.scrollY||document.documentElement.scrollTop;
+    head.classList.toggle('on', y>8);
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(y/h*100):0)+'%';
+  }
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  var done=false;
+  function counters(){
+    if(done) return; done=true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target=parseInt(el.getAttribute('data-count'),10), suf=el.getAttribute('data-suffix')||'', t0=null;
+      function step(ts){
+        if(!t0) t0=ts;
+        var p=Math.min((ts-t0)/1400,1), e=1-Math.pow(1-p,3);
+        el.textContent=Math.round(target*e).toLocaleString('it-IT')+suf;
+        if(p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var book=document.getElementById('fpBook');
+  if(book){
+    var st={};
+    document.querySelectorAll('.fp-slot').forEach(function(b){
+      b.addEventListener('click',function(){
+        var g=b.parentNode;
+        g.querySelectorAll('.fp-slot').forEach(function(x){x.classList.remove('sel')});
+        b.classList.add('sel');
+        st[g.parentNode.getAttribute('data-key')]=b.textContent.trim();
+        var msg='Salve, vorrei prenotare una visita.'+(st.giorno?' Giorno preferito: '+st.giorno+'.':'')+(st.ora?' Fascia oraria: '+st.ora+'.':'');
+        book.setAttribute('href','https://wa.me/393470000000?text='+encodeURIComponent(msg));
+      });
+    });
+  }
+
+  var stats=document.querySelector('.fp-stats');
+  if(stats && 'IntersectionObserver' in window){
+    var o=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ counters(); o.disconnect(); } }); },{threshold:.35});
+    o.observe(stats);
+  } else { counters(); }
+})();
+</script>
+</div>
+
+</body>
+</html>
