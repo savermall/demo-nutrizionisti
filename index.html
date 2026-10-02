@@ -263,6 +263,14 @@
 .fp-slot:hover{border-color:var(--verde-3)}
 .fp-slot.sel{background:var(--verde);border-color:var(--verde);color:#fff}
 
+.fp-people{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:820px){.fp-people{grid-template-columns:1fr}}
+.fp-shot.tall{min-height:400px}
+.fp-shot.below figcaption{position:static;background:transparent;padding:14px 2px 0;border-radius:0;font-size:.9rem}
+.fp-shot.below figcaption b{font-size:1rem}
+.fp-avatar{border-radius:26px;overflow:hidden;aspect-ratio:683/1024;box-shadow:0 26px 60px rgba(18,36,29,.13);background:#eaf3ee}
+.fp-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+
 /* ---------- animazioni ---------- */
 .rv{opacity:1;transform:none}
 .fp.anim .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
@@ -334,6 +342,21 @@
   </div>
 </section>
 
+<!-- ============ PERSONE ============ -->
+<section class="fp sec tight" id="persone">
+  <div class="wrap">
+    <div class="fp-hd rv" style="max-width:40em;margin:0 auto clamp(24px,3vw,38px);text-align:center">
+      <span class="eyebrow">Persone, non diete</span>
+      <h2 style="margin:14px 0 12px">Dietro ogni piano c'e' una vita vera</h2>
+      <p>Una famiglia da sfamare, una cena fuori con gli amici, la partita la domenica. Il percorso si costruisce intorno a questo, non il contrario.</p>
+    </div>
+    <div class="fp-people">
+      <figure class="fp-shot tall below rv"><img src="img/famiglia.webp" alt="Una famiglia che cucina insieme"><figcaption><b>Tutta la famiglia</b><br>Un piano che funziona anche per chi cucina per tutti, non solo per se stesso.</figcaption></figure>
+      <figure class="fp-shot tall below rv"><img src="img/mani.webp" alt="Preparare verdure fresche in cucina"><figcaption><b>Si cucina, non si soffre</b><br>Ricette semplici, con quello che hai gia' in casa e trovi al mercato.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PROBLEMI ============ -->
 <section class="fp sec">
   <div class="wrap">
@@ -376,7 +399,7 @@
 <section class="fp sec" style="background:#fff;border-top:1px solid var(--bordo);border-bottom:1px solid var(--bordo)">
   <div class="wrap">
     <div class="fp-about">
-      <figure class="fp-portrait rv"><img src="img/chi-sono.webp" alt="Tavola con un pasto bilanciato" width="683" height="1024"></figure>
+      <figure class="fp-avatar rv"><img src="img/ritratto-placeholder.svg" alt="Spazio per la foto del professionista" width="683" height="1024"></figure>
       <div class="rv">
         <span class="eyebrow">Chi sono</span>
         <h2 style="margin:14px 0 16px">Francesco Romeo, nutrizionista a Reggio Calabria.</h2>

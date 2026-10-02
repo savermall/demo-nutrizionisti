@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683 1024" width="683" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0%" stop-color="#eaf3ee"/><stop offset="100%" stop-color="#cfe3d7"/>
+    </linearGradient>
+    <linearGradient id="sk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f7a5a"/><stop offset="100%" stop-color="#14543f"/>
+    </linearGradient>
+  </defs>
+  <rect width="683" height="1024" fill="url(#bg)"/>
+  <circle cx="341" cy="392" r="118" fill="url(#sk)" opacity="0.92"/>
+  <path d="M120 1024c0-146 99-248 221-248s221 102 221 248z" fill="url(#sk)" opacity="0.92"/>
+  <g transform="translate(341,700)">
+    <rect x="-128" y="-40" width="256" height="80" rx="40" fill="#ffffff" opacity="0.94"/>
+    <text x="0" y="8" font-family="Inter,system-ui,sans-serif" font-size="27" font-weight="700" fill="#14543f" text-anchor="middle">la tua foto qui</text>
+  </g>
+  <text x="341" y="810" font-family="Inter,system-ui,sans-serif" font-size="21" fill="#5f7168" text-anchor="middle">Ritratto professionale, verticale</text>
+</svg>
