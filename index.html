@@ -266,11 +266,12 @@
 .fp-people{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media (max-width:820px){.fp-people{grid-template-columns:1fr}}
 .fp-shot.tall{min-height:400px}
-.fp-shot.below{min-height:0;border-radius:0;overflow:visible}
-.fp-shot.below img{position:static;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);display:block}
-.fp-shot.below:hover img{transform:none}
-.fp-shot.below figcaption{position:static;background:transparent;padding:14px 2px 0;border-radius:0;font-size:.9rem}
-.fp-shot.below figcaption b{font-size:1rem}
+.fp-people-item{display:block;margin:0}
+.fp-people-item img{display:block;width:100%;height:420px;object-fit:cover;border-radius:var(--r);transition:transform .5s ease}
+.fp-people-item:hover img{transform:scale(1.02)}
+.fp-people-item figcaption{padding:14px 2px 0;font-size:.9rem;color:var(--grigio)}
+.fp-people-item figcaption b{display:block;font-size:1rem;color:var(--inchiostro);margin-bottom:4px}
+@media (max-width:820px){.fp-people-item img{height:300px}}
 .fp-avatar{border-radius:26px;overflow:hidden;aspect-ratio:683/1024;box-shadow:0 26px 60px rgba(18,36,29,.13);background:#eaf3ee}
 .fp-avatar img{width:100%;height:100%;object-fit:cover;display:block}
 
@@ -354,8 +355,8 @@
       <p>Una famiglia da sfamare, una cena fuori con gli amici, la partita la domenica. Il percorso si costruisce intorno a questo, non il contrario.</p>
     </div>
     <div class="fp-people">
-      <figure class="fp-shot tall below rv"><img src="img/famiglia.webp" alt="Una famiglia che cucina insieme"><figcaption><b>Tutta la famiglia</b><br>Un piano che funziona anche per chi cucina per tutti, non solo per se stesso.</figcaption></figure>
-      <figure class="fp-shot tall below rv"><img src="img/mani.webp" alt="Preparare verdure fresche in cucina"><figcaption><b>Si cucina, non si soffre</b><br>Ricette semplici, con quello che hai gia' in casa e trovi al mercato.</figcaption></figure>
+      <figure class="fp-people-item rv"><img src="img/famiglia.webp" alt="Una famiglia che cucina insieme"><figcaption><b>Tutta la famiglia</b>Un piano che funziona anche per chi cucina per tutti, non solo per se stesso.</figcaption></figure>
+      <figure class="fp-people-item rv"><img src="img/mani.webp" alt="Preparare verdure fresche in cucina"><figcaption><b>Si cucina, non si soffre</b>Ricette semplici, con quello che hai gia' in casa e trovi al mercato.</figcaption></figure>
     </div>
   </div>
 </section>
